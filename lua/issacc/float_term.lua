@@ -30,7 +30,6 @@ end
 vim.api.nvim_create_user_command("FloatTerminal", function()
 	if not vim.api.nvim_win_is_valid(win) then
 		win = create_window()
-		vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
 		if vim.bo[term_bufn].buftype ~= "terminal" then
 			vim.cmd.terminal()
 		end
