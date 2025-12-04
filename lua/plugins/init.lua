@@ -1,5 +1,7 @@
 return {
 	'nyoom-engineering/oxocarbon.nvim',
+	'sainnhe/gruvbox-material',
+	'Mofiqul/vscode.nvim',
 	'rcarriga/nvim-notify',
 	{
 		"folke/todo-comments.nvim",

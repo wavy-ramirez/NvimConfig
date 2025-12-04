@@ -1,5 +1,6 @@
 local builtin = require("telescope.builtin")
 
+vim.keymap.set("n", "<leader>sc", function() builtin.colorscheme() end, {desc = "Search Colorschemes"})
 vim.keymap.set("n", "<leader>sf", function() builtin.find_files() end, {desc = "Search Files"})
 vim.keymap.set("n", "<leader><leader>", function() builtin.buffers() end, {desc = "Search Buffers"})
 vim.keymap.set("n", "<leader>sh", function() builtin.help_tags() end, {desc = "Search Help Tags"})

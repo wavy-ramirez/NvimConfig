@@ -5,6 +5,8 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.opt.smartindent = true
+vim.opt.cinoptions = "l1"
 vim.opt.clipboard = "unnamedplus"
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open Netrw" })
@@ -15,6 +17,8 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "" })
 vim.keymap.set("x", "<leader>p", "\"_P", { desc = "" })
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { desc = "" })
 vim.keymap.set("n", "<ESC>", vim.cmd.nohl, { desc = "" })
+
+vim.keymap.set("n", "<leader>lr", function() vim.cmd("LspRestart") end, { desc = "LSP Restart"})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "" })
